@@ -1,0 +1,6 @@
+{
+  "type": "commonjs",
+  "dependencies": {
+    "youtube-mp3-downloader": "^0.7.11"
+  }
+}
