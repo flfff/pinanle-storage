@@ -1,6 +1,8 @@
 {
   "type": "commonjs",
   "dependencies": {
-    "youtube-mp3-downloader": "^0.7.11"
+    "fs": "^0.0.1-security",
+    "youtube-mp3-downloader": "^0.7.11",
+    "ytdl-core": "^4.11.2"
   }
 }

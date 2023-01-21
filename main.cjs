@@ -20,13 +20,13 @@ YD.on("error", function (error) {
 });
 
 YD.on("progress", function (progress) {
-    //console.log(JSON.stringify(progress));
+    console.log(JSON.stringify(progress));
 });
 
-const flag = false;
+const flag = true;
 
 if (flag) {
-    let days = [164, 165, 170, 177, 182, 184, 187];
+    let days = [251, 261, 265, 266, 267];
     for (let day in days) {
         let song = songs.songs[days[day]];
         let file = fs.existsSync("./pieces/" + song.youtubeId + ".mp3");
@@ -37,7 +37,7 @@ if (flag) {
         }
     }
 } else {
-    let startday = 240;
+    let startday = 249;
     let endday = 300;
 
     for (let i = startday - 1; i < endday; i++) {
