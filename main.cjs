@@ -7,7 +7,7 @@ var YD = new YoutubeMp3Downloader({
     "ffmpegPath": "C:/Program Files (x86)/FFmpeg for Audacity/ffmpeg.exe", // FFmpeg binary location
     "outputPath": "C:/Users/Ethan/Documents/pinanle-storage/pieces", // Output file location (default: the home directory)
     "youtubeVideoQuality": "lowest", // Desired video quality (default: highestaudio)
-    "queueParallelism": 10, // Download parallelism (default: 1)
+    "queueParallelism": 1, // Download parallelism (default: 1)
     "progressTimeout": 5000 // Interval in ms for the progress reports (default: 1000)
 });
 
@@ -26,7 +26,7 @@ YD.on("progress", function (progress) {
 const flag = true;
 
 if (flag) {
-    let days = [251, 261, 265, 266, 267];
+    let days = [280, 283, 290];
     for (let day in days) {
         let song = songs.songs[days[day]];
         let file = fs.existsSync("./pieces/" + song.youtubeId + ".mp3");
@@ -37,7 +37,7 @@ if (flag) {
         }
     }
 } else {
-    let startday = 249;
+    let startday = 260;
     let endday = 300;
 
     for (let i = startday - 1; i < endday; i++) {
